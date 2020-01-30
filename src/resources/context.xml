@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <bean class="com.org.xworks.Bottle.bean.Bottle" id="bot">
+		<constructor-arg value="Glass" />
+		<constructor-arg value="1.0" />
+	</bean>
+	<bean class="com.org.xworks.Bottle.bean.Kudaka" id="kuduka">
+		<property name="name" value="kavya" />
+		<property name="bottle" ref="bot" />
+	</bean> -->
+
+
+	<!-- <bean class="com.org.xworks.Farmer.bean.Land" id="land">
+		<property name="type" value="wheat" />
+		<property name="price" value="200.00" />
+		<property name="profit" value="true" />
+	</bean>
+
+	<bean class="com.org.xworks.Farmer.bean.Farmer" id="farmer">
+		<constructor-arg value="Akash" />
+		<constructor-arg value="50" />
+		<constructor-arg value="Humnabad" />
+		<constructor-arg ref="land" />
+	</bean>
+ -->
+
+	
+	
+	<bean class="com.org.xworks.Rocket.bean.Satellite" id="satellite">
+		<property name="name" value="Microsat"/>
+	</bean>
+	
+	<bean class="com.org.xworks.Rocket.bean.Fuel" id="f">
+		<constructor-arg value="LiquidOxygen"/>	
+	</bean>
+	
+	<bean class="com.org.xworks.Rocket.bean.Rocket" id="rocket">
+		<property name="countryName" value="India"/>
+		<constructor-arg ref="f"/>
+		<property name="sat" ref="satellite"/>	 
+	</bean>
+	
+	
+	<!-- <bean class="com.org.xworks.Labour.bean.TClass" id="t">
+	
+	</bean>
+	
+	
+	<bean class="com.org.xworks.Labour.bean.Labour" id="labour">
+		<constructor-arg value="Ram"/>
+		<property name="experience" value="10"/>
+		<property name="tClass" ref="t"/>
+	</bean> -->
+	
+
+</beans>
